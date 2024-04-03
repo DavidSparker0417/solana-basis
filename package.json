@@ -14,6 +14,9 @@
     "axios": "^1.6.8"
   },
   "dependencies": {
+    "@coral-xyz/borsh": "^0.29.0",
+    "@metaplex-foundation/js": "^0.18.3",
+    "@solana/spl-token": "^0.4.3",
     "esrun": "^3.2.26",
     "typescript": "^5.4.3"
   }
