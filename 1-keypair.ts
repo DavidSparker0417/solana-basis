@@ -1,6 +1,6 @@
 import "dotenv/config"
 import { Keypair } from "@solana/web3.js";
-import { addKeypairToEnvFile, getKeypairFromEnvironment } from "@solana-developers/helpers"
+import { addKeypairToEnvFile, getKeypairFromEnvironment, keypairToSecretKeyJSON } from "@solana-developers/helpers"
 
 function generateKeyPair()
 {
@@ -19,5 +19,4 @@ if (!keypair)
 
 console.log(`The public key is: `, keypair.publicKey.toBase58());
 console.log(`The secret key is: `, keypair.secretKey);
-
-
+console.log(`KeyPair JSON :: ${keypairToSecretKeyJSON(keypair)}`)
